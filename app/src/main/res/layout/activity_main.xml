@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/layoutMain"
+    tools:context=".views.MainActivity"
+    >
+
+    <TextView
+        android:id="@+id/labelCurrentScore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/invisibleRow"
+        android:layout_marginLeft="32px"
+        android:layout_marginTop="32px"
+        android:layout_marginBottom="16px"
+        android:gravity="left"
+        android:text="SCORE"
+        android:textSize="24px" />
+
+    <TextView
+        android:id="@+id/labelHighScore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/invisibleRow"
+        android:layout_marginRight="32px"
+        android:layout_marginTop="32px"
+        android:layout_marginBottom="16px"
+        android:gravity="right"
+        android:text="HI-SCORE"
+        android:textSize="24px" />
+
+    <TextView
+        android:id="@+id/tvCurrentScore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/invisibleRow"
+        android:layout_below="@+id/labelCurrentScore"
+        android:layout_marginLeft="32px"
+        android:gravity="left"
+        android:text="1234567890"
+        android:textSize="36px"
+        tools:ignore="UnknownId" />
+
+    <TextView
+        android:id="@+id/tvHighScore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/invisibleRow"
+        android:layout_below="@+id/labelHighScore"
+        android:layout_marginRight="32px"
+        android:gravity="right"
+        android:text="1234567890"
+        android:textSize="36px"
+        tools:ignore="UnknownId" />
+
+    <View
+        android:id="@+id/invisibleRow"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:gravity="center"
+        android:text="Snake\nlikes\nApricot"
+        android:textAllCaps="true"
+        android:textColor="@android:color/white"
+        android:textSize="64px"
+        tools:ignore="UnknownId" />
+
+    <TextView
+        android:id="@+id/tvTapToPlay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvTitle"
+        android:gravity="center"
+        android:layout_marginTop="64dp"
+        android:text="TAP TO PLAY"
+        android:textAllCaps="false"
+        android:textColor="@android:color/holo_orange_light"
+        tools:ignore="UnknownId" />
+
+</RelativeLayout>

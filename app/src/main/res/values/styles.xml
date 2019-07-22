@@ -1,0 +1,16 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="@style/Theme">
+        <item name="android:typeface">serif</item>
+        <!--
+        <item name="android:textViewStyle">@font/eightbit</item>
+        <item name="android:buttonStyle">@font/eightbit</item>
+        -->
+    </style>
+
+    <style name="Theme" parent="Theme.AppCompat.NoActionBar">
+
+    </style>
+
+</resources>
